@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 id="title" class="title">
+                freeCodeCamp Survey Form
+            </h1>
+            <p id="description" class="title">Thank you for taking the time to help us improve the platform</p>
+        </header>
+    
+        <form id="survey-form">
+            <label id="name-label">Name</label>
+            <input id="name" class="inputs" type="text" placeholder="Enter your name" required>
+            <label id="email-label">Email</label>
+            <input id="email" class="inputs" type="email" placeholder="Enter your email" required>
+            <label id="number-label">Age</label>
+            <input id="number" class="inputs" type="number" min="18" max="99" placeholder="Age">
+            
+            <div class="form-group">
+
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </div>
+                <label>Would you recommend freeCodeCamp to a friend?</label>
+                <input type="radio" name="recommend" value="definitely">
+                <label>Definitely</label><br>
+                <input type="radio" name="recommend" value="maybe">
+                <label>Maybe</label><br>
+                <input type="radio" name="recommend" value="not sure">
+                <label>Not Sure</label><br>
+    
+            <input type="checkbox" value="Front-end Projects">
+            <label>Front-end Projects</label><br>
+            <input type="checkbox" value="Front-end Projects">
+            <label>Front-end Projects</label><br>
+            <input type="checkbox" value="Front-end Projects">
+            <label>Front-end Projects</label><br>
+    
+            <textarea placeholder="Enter Your Comment Here...">Any comments or suggestions?</textarea>
+            <button id="submit" type="submit">Submit</button>
+    
+        </form>
+    </div>
+
+</body>
+</html>
